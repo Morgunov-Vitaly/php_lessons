@@ -23,14 +23,10 @@ function __autoload($class_name){
     }
 };
 
-try {
     $data1 = new app\Data1();
     $data2 = new app\Data2();
     $data3 = new brand\core\App();
     $app = new app\App();
-} catch (Exception $ex) {
-    echo $ex->getMessage() . ' Код ошибки: ' . $ex->getCode();
-}
 $app->run($data1); //Пример полиморфизма - метод объекта способен обрабатывать разные типы данных благодаря интерфейсу - общему названию метода
 $app->run($data2);
 //$data1->lessons = 'New value'; // демонстрация работы приватного свойства - мы не можем напрямую обратиться к приватным свойствам или методам извне класса
