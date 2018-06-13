@@ -8,7 +8,7 @@ namespace brand\core;
  */
 class App {
     public function __construct() {
-        echo 'Выполнен метод __construct класса App в папке vendor/brand/core/';
+        echo 'Выполнен метод __construct родительского класса App в папке vendor/brand/core/';
         echo "<br>";
     }
 }
