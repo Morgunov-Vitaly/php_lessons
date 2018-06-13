@@ -1,9 +1,9 @@
 <?php
 // __DIR__  - волшебная константа PHP указывает на текущую дирректорию
-//require_once __DIR__ . '../vendor/brand/core/App.php';
-//require_once __DIR__ . '../app/App.php';
-//require_once __DIR__ . '../app/Data1.php';
-//require_once __DIR__ . '../app/Data2.php';
+//require_once __DIR__ . '/../vendor/brand/core/App.php';
+//require_once __DIR__ . '/../app/App.php';
+//require_once __DIR__ . '/../app/Data1.php';
+//require_once __DIR__ . '/../app/Data2.php';
 
 /**
  * Используем технику автозагрузчика с перехватом исключений
