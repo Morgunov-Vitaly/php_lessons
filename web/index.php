@@ -33,3 +33,18 @@ $app = new app\App();
 $app->run($data1); //Пример полиморфизма - метод объекта способен обрабатывать разные типы данных благодаря интерфейсу - общему названию метода
 $app->run($data2);
 //$data1->lessons = 'New value'; // демонстрация работы приватного свойства - мы не можем напрямую обратиться к приватным свойствам или методам извне класса
+
+/* автозагрузчик от Косова
+
+// Автозагрузчик классов
+
+spl_autoload_register(function($className) {
+	//$className = "PluginName\TestClass1";
+	//Если PluginName -- корневая папка для плагина, то стоит заменить её на ничего
+	//require_once "PluginName/TestClass1.php";
+	$fileName = plugin_dir_path( __FILE__ ) . "/" . str_replace('\\', '/', $className) . '.php';
+	if (file_exists($fileName)) {
+		require_once $fileName;
+	}
+});
+ */
