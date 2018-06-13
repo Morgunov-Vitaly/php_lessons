@@ -12,4 +12,7 @@ class App extends ParentApp {
         echo "<br>";
         parent::__construct(); // вызываем родительский метод
     }
+    public function run($data = null) {
+        echo $data->get(). "<br>";
+    }
 }
